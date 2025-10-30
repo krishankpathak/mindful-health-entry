@@ -70,12 +70,12 @@ const Auth = () => {
       toast.success("Welcome back! 👋", {
         description: "You've successfully logged in.",
       });
-      navigate("/");
+      setTimeout(() => navigate("/dashboard"), 1000);
     } else {
       toast.success("Account created successfully! 🎉", {
         description: "Redirecting to your dashboard...",
       });
-      setTimeout(() => navigate("/"), 1500);
+      setTimeout(() => navigate("/dashboard"), 1500);
     }
   };
 
